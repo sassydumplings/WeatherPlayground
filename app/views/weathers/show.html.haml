@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Day:
+  = @weather.day
+%p
+  %b Min:
+  = @weather.min
+%p
+  %b Max:
+  = @weather.max
+
+= link_to 'Edit', edit_weather_path(@weather)
+\|
+= link_to 'Back', weathers_path
